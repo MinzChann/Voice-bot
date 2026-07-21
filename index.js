@@ -1,6 +1,7 @@
 const { Client, GatewayIntentBits } = require('discord.js');
 const { joinVoiceChannel } = require('@discordjs/voice');
 const http = require('http');
+
 const TOKEN = 'MTUyOTE3MTQ0MzM5OTUyNDQwMg.G89b-M.Rb7dpB7RY6jFJJa_nQ9eClHEF-TxZOECGdystU';
 const GUILD_ID = '1516850441256698030';
 const CHANNEL_ID = '1516858634506604695';
@@ -21,7 +22,7 @@ client.once('ready', () => {
             guildId: guild.id,
             adapterCreator: guild.voiceAdapterCreator,
             selfDeaf: true,
-            selfMute: true,
+            selfMute: true
         });
         console.log('Da vao voice!');
     }
